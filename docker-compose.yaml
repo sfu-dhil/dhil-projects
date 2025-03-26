@@ -1,0 +1,26 @@
+services:
+  collectionbuilder:
+    platform: linux/amd64
+    container_name: dhil_projects
+    image: dhilsfu/collectionbuilder-docker
+    ports:
+      - 4000:4000
+    volumes:
+      - ./app/_data:/app/_data
+      - ./app/objects:/app/objects
+      - ./app/pages:/app/pages
+      - ./app/_config.yml:/app/_config.yml
+
+      # override content
+      - ./app/_includes/footer.html:/app/_includes/footer.html
+      - ./app/_includes/item/citation-box.html:/app/_includes/item/citation-box.html
+      - ./app/_includes/item/child/citation-box.html:/app/_includes/item/child/citation-box.html
+      - ./app/_includes/item/rights-box.html:/app/_includes/item/rights-box.html
+      - ./app/_layouts/home-infographic.html:/app/_layouts/home-infographic.html
+    environment:
+      - METADATA_FILE_URL=https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1w2oAELCjCt6BbEVv2UmRBOQ7OOXAZHHZLTwjlAQKUDKFHsGy4I9Eq1pp6a4lqTYrAvttEYjW75f_/pub?gid=0&single=true&output=csv
+      - METADATA_FILE_NAME=metadata.csv
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://localhost:4000/ || exit 1"]
+      interval: 2s
+      retries: 120

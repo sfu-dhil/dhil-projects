@@ -1,0 +1,9 @@
+filename,object_location,image_small,image_thumb
+amp_1.png,/objects/amp_1.png,/objects/small/amp_1_sm.webp,/objects/thumbs/amp_1_th.webp
+amp_2.png,/objects/amp_2.png,/objects/small/amp_2_sm.webp,/objects/thumbs/amp_2_th.webp
+amp_3.png,/objects/amp_3.png,/objects/small/amp_3_sm.webp,/objects/thumbs/amp_3_th.webp
+amp_4.png,/objects/amp_4.png,/objects/small/amp_4_sm.webp,/objects/thumbs/amp_4_th.webp
+amplify-logo.png,/objects/amplify-logo.png,/objects/small/amplify-logo_sm.webp,/objects/thumbs/amplify-logo_th.webp
+fragmenting_1.png,/objects/fragmenting_1.png,/objects/small/fragmenting_1_sm.webp,/objects/thumbs/fragmenting_1_th.webp
+fragmenting_2.png,/objects/fragmenting_2.png,/objects/small/fragmenting_2_sm.webp,/objects/thumbs/fragmenting_2_th.webp
+fragmenting_3.png,/objects/fragmenting_3.png,/objects/small/fragmenting_3_sm.webp,/objects/thumbs/fragmenting_3_th.webp

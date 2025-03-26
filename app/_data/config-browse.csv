@@ -1,0 +1,7 @@
+field,display_name,btn,badge,hidden,sort_name
+status,Status,true,,,
+date,Date,,,,Date
+pi,Principal Investigator,,true,,
+contributors,Contributor(s),,true,,
+organizations,Organization(s),,true,,
+subject,,true,,,

@@ -1,0 +1,71 @@
+##########
+# URL VARIABLES
+#
+# site domain, full URL to the production location of your collection
+url: https://sfu-dhil.github.io
+# path to location on the domain if necessary e.g. /digital/hjccc
+baseurl: /dhil-projects
+# location of code, the full url to your github repository
+source-code: https://github.com/sfu-dhil/dhil-projects
+
+##########
+# SITE SETTINGS
+#
+# title of site appears in banner
+title: Digital Humanities Innovation Lab (DHIL) Projects
+# tagline, a short phrase that will appear throughout the site in the top banner
+tagline: Digital Collection Magic with Static Web Technologies
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: >
+  <p>The DHIL assists SFU researchers with the development of digital scholarship by providing consultations, training, mentoring, research software development, and technical support. We foster collaboration and interdisciplinarity across faculty and promote the development and dissemination of high-quality research that positions SFU as a world leader in digital scholarship.</p>
+  <p>Located in the W.A.C. Bennett Library at SFU Burnaby and utilizing meeting space at the Vancouver and Surrey Campuses, the DHIL leverages the Library’s expertise in digital initiatives, unique special collections, and research skill-development programming.</p>
+# keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
+keywords:
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: DHIL
+
+##########
+# COLLECTION SETTINGS
+#
+# Set the metadata for your collection (the name of the CSV file in your _data directory that describes the objects in your collection)
+# Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
+metadata: metadata
+# page generation settings [optional!]
+# [optional: only used if you need to tweak CB defaults or generate from more than one data file]
+# page_gen:
+#   - data: 'demo-metadata'
+#     template: 'item'
+#     name: 'objectid'
+#     dir: 'items'
+#     extension: 'html'
+#     filter: 'objectid'
+
+##########
+# Site/Organization Branding
+#   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
+#   To remove the branding, comment out these values, or delete them.
+#
+organization-name: "Digital Humanities Innovation Lab (DHIL)"
+organization-link: https://www.lib.sfu.ca/help/publish/dh/dhil/about
+organization-logo-banner:
+organization-logo-nav:
+
+##########
+# ROBOTS EXCLUDE
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true
+
+##########
+# BUILD SETTINGS
+#
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+# (this is done automatically by gh-pages build)
+#
+# ignore stuff
+exclude: [Rakefile, rakelib/]
+# compress CSS output
+sass:
+  style: compressed

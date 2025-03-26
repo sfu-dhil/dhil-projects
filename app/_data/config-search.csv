@@ -1,0 +1,8 @@
+field,index,display
+title,true,true
+date,true,true
+pi,true,false
+contributors,true,false
+organizations,true,false
+description,true,true
+subject,true,true

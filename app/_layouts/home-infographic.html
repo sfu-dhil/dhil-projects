@@ -1,0 +1,15 @@
+---
+# Default home page with boxes providing collection stats
+layout: page
+---
+{% include index/description.html %}
+<div class="row">
+
+  <div class="col-md-6">
+    {% include index/time.html %}
+  </div>
+  <div class="col-md-6">
+    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
+  </div>
+</div>
+{% include index/carousel.html title="Sample Projects" %}

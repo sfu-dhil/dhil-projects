@@ -1,0 +1,15 @@
+field,display_name,browse_link,external_link,badge,dc_map,schema_map
+title,Title,,,,DCTERMS.title,headline
+pi,Principal Investigator,,,true,DCTERMS.creator,creator
+contributors,Contributor(s),,,true,DCTERMS.contributor,contributor
+organizations,Organization(s),,,true,,
+status,Status,true,,,,
+date,Started,,,,DCTERMS.date,dateCreated
+date_ended,Completed,,,,,
+description,Description,,,,DCTERMS.description,description
+subject,Subjects,true,,,DCTERMS.subject,keywords
+website,Website,,true,,,
+type,,,,true,DCTERMS.type,
+format,,,,true,,encodingFormat
+language,,,,true,DCTERMS.language,
+rightsstatement,,,,,DCTERMS.rights,license

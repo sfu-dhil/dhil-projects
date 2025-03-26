@@ -1,0 +1,16 @@
+{% comment %}
+
+    Adds a basic citation box for child item with reference link to the child page.
+
+{%- endcomment -%}
+{% if child.source %}
+<div class="card">
+    <div class="card-header">Source Code</div>
+    <div class="card-body">
+        <dl>
+            <dt>Github Link:</dt>
+            <dd><a target="_blank" rel="noopener" href="{{ child.source }}">{{ child.source }}</a></dd>
+        </dl>
+    </div>
+</div>
+{% endif %}
