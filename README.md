@@ -12,7 +12,6 @@
 
     docker run --rm -it --platform linux/amd64  \
         -e METADATA_FILE_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1w2oAELCjCt6BbEVv2UmRBOQ7OOXAZHHZLTwjlAQKUDKFHsGy4I9Eq1pp6a4lqTYrAvttEYjW75f_/pub?gid=0&single=true&output=csv" \
-        -e METADATA_FILE_NAME="metadata.csv" \
         -v ${PWD}/app/_data:/app/_data \
         -v ${PWD}/app/objects:/app/objects \
         -v ${PWD}/app/pages:/app/pages \

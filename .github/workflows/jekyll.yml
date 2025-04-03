@@ -23,7 +23,6 @@ concurrency:
 
 env:
   METADATA_FILE_URL: https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1w2oAELCjCt6BbEVv2UmRBOQ7OOXAZHHZLTwjlAQKUDKFHsGy4I9Eq1pp6a4lqTYrAvttEYjW75f_/pub?gid=0&single=true&output=csv
-  METADATA_FILE_NAME: metadata.csv
 
 jobs:
   build:
@@ -35,7 +34,6 @@ jobs:
       run: |
         docker run --rm \
           -e METADATA_FILE_URL="${{ env.METADATA_FILE_URL }}" \
-          -e METADATA_FILE_NAME="${{ env.METADATA_FILE_NAME }}" \
           -v ${{ github.workspace }}/app/_data:/app/_data \
           -v ${{ github.workspace }}/app/objects:/app/objects \
           -v ${{ github.workspace }}/app/pages:/app/pages \
