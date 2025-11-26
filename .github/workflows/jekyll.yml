@@ -44,7 +44,7 @@ jobs:
           -v ${{ github.workspace }}/app/_includes/item/rights-box.html:/app/_includes/item/rights-box.html \
           -v ${{ github.workspace }}/app/_layouts/home-infographic.html:/app/_layouts/home-infographic.html \
           -v ${{ github.workspace }}/_site:/app/_site \
-          dhilsfu/collectionbuilder-docker rake deploy
+          ghcr.io/sfu-dhil/collectionbuilder-docker rake deploy
     - name: Upload artifact
       # Automatically uploads an artifact from the './_site' directory by default
       uses: actions/upload-pages-artifact@v3

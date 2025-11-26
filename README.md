@@ -1,3 +1,5 @@
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://sfu-dhil.github.io/dhil-projects/)
+
 # dhil-projects
 
 
@@ -5,7 +7,7 @@
 
     docker run --rm -it --platform linux/amd64  \
         -v ${PWD}/app/objects:/app/objects \
-        dhilsfu/collectionbuilder-docker rake generate_derivatives
+        ghcr.io/sfu-dhil/collectionbuilder-docker rake generate_derivatives
 
 
 ## Build for deployment
@@ -22,4 +24,4 @@
         -v ${PWD}/app/_includes/item/rights-box.html:/app/_includes/item/rights-box.html \
         -v ${PWD}/app/_layouts/home-infographic.html:/app/_layouts/home-infographic.html \
         -v ${PWD}/_site:/app/_site \
-        dhilsfu/collectionbuilder-docker rake deploy
+        ghcr.io/sfu-dhil/collectionbuilder-docker rake deploy

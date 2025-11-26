@@ -2,7 +2,7 @@ services:
   collectionbuilder:
     platform: linux/amd64
     container_name: dhil_projects
-    image: dhilsfu/collectionbuilder-docker
+    image: ghcr.io/sfu-dhil/collectionbuilder-docker
     ports:
       - 4000:4000
     volumes:
